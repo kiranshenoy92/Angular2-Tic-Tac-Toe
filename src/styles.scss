@@ -1,0 +1,47 @@
+app-battelfield{
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  margin-top: -224px;
+  margin-left: -165px;
+  display: block;
+}
+
+app-battelfield-2player{
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  margin-top: -224px;
+  margin-left: -165px;
+  display: block;
+}
+
+.xo-tick {
+    width: 50%;
+    margin-top: -50px
+}
+span img.xo-tick {
+    width:15%;
+    margin-top:0px
+}
+
+.btn {
+    background-color: none;
+    background: transparent;
+    background-image: none;
+    border: 1px solid red;
+    color: red;
+    margin-left: 40%;
+    margin-top:5%;
+}
+.btn:hover{
+    background-color: none;
+    background: transparent;
+    background-image: none;
+    border: 1px solid red;
+    color: red;
+}

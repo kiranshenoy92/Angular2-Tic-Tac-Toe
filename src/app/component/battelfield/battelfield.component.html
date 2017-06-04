@@ -1,0 +1,17 @@
+<h2 *ngIf="!this.gameService.gameComplete() && !this.gameService.gameDraw()" class="text-center">It’s <span [innerHTML]="currentPlayerLabel"></span> turn! <span class="title-block"></span></h2>
+<h2 *ngIf="this.gameService.gameComplete() " class="text-center" >Congratulations, <span [innerHTML]="winnerPlayer"></span> wins!<span class="title-block"></span></h2>
+
+<h2 *ngIf="this.gameService.gameDraw() && !this.gameService.gameComplete()" class="text-center" >DRAW!! <span class="title-block"></span></h2>
+<div class="tc-battlefield">
+  <div (click) = "clicked(1)" class="square block-one"   appTick [value]="currentPlayerLabel"></div>
+  <div (click) = "clicked(2)" class="square block-two"   appTick [value]="currentPlayerLabel"></div>
+  <div (click) = "clicked(3)" class="square block-three" appTick [value]="currentPlayerLabel"></div>
+  <div (click) = "clicked(4)" class="square block-four"  appTick [value]="currentPlayerLabel"></div>
+  <div (click) = "clicked(5)" class="square block-five"  appTick [value]="currentPlayerLabel"></div>
+  <div (click) = "clicked(6)" class="square block-six"   appTick [value]="currentPlayerLabel"></div>
+  <div (click) = "clicked(7)" class="square block-seven" appTick [value]="currentPlayerLabel"></div>
+  <div (click) = "clicked(8)" class="square block-eight" appTick [value]="currentPlayerLabel"></div>
+  <div (click) = "clicked(9)" class="square block-nine"  appTick [value]="currentPlayerLabel"></div>
+</div>
+
+<button class="btn btn-lg" appReset (click)="init()"> RESET</button>
